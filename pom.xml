@@ -14,7 +14,18 @@
 	</properties>
 
 	<dependencies>
-
+<distributionManagement>
+    <repository>
+        <id>nexus</id>  
+        <name>Release Repos</name>
+        <url>http://34.125.203.138:8081/repository/release-repo/</url>
+     </repository>
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>Snapshot Repos</name>
+        <url>http://34.125.203.138:8081/repository/snapshot-repo/</url>
+    </snapshotRepository>
+</distributionManagement>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
