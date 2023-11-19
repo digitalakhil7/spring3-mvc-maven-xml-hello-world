@@ -25,6 +25,7 @@
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
 		</dependency>
+	</dependencies>
 <distributionManagement>
     <repository>
         <id>nexus</id>  
@@ -37,8 +38,6 @@
         <url>http://34.125.203.138:8081/repository/snapshot-repo/</url>
     </snapshotRepository>
 </distributionManagement>
-	</dependencies>
-
 	<build>
 
 		<plugins>
