@@ -16,7 +16,7 @@
     <repository>
         <id>nexus</id>
         <name>Akhil Remote Repo</name>
-        <url>http://34.125.203.138:8081/repository/release-repo/</url>
+        <url>http://34.125.203.138:8081/repository/mixed/</url>
     </repository>
 </repositories>
 	<dependencies>
