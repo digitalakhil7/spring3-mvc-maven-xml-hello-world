@@ -11,6 +11,8 @@
 		<jdk.version>1.8</jdk.version>
 		<spring.version>3.2.13.RELEASE</spring.version>
 		<jstl.version>1.2</jstl.version>
+		<sonar.host.url>http://34.16.185.108:9000/</sonar.host.url>
+		<sonar.login>squ_c64a6095e12f7e9408d2a17501fba9cdad48f9b9</sonar.login>
 	</properties>
 	<dependencies>
 		<dependency>
