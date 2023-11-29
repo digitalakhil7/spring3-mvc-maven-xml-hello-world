@@ -11,7 +11,7 @@ pipeline{
             steps{
                 echo "Master Branch Updated"
                 echo "name is ${name}"
-                sh "printenv"
+                echo "$myName and ${myAge}"
             }
         }
     }
