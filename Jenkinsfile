@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Test'){
             when{
-                equals expected: "nikhil", actual: "${approval}"
+                equals expected: "akhil", actual: "${approval}"
             }
             steps{
                 echo "Hello Master"
