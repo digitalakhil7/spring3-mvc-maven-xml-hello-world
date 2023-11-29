@@ -2,6 +2,7 @@ pipeline{
     agent any
     environment{
         name = "Akhil"
+        nexuskey = credentials('nexus_creds')
     }
     stages{
         stage('Test'){
@@ -9,7 +10,9 @@ pipeline{
         name = "AkhilJenkins"
         }
             steps{
-                echo "Master Branch Updated"
+                echo "Creds: ${nexuskey}"
+                echo "Username: ${nexuskey_USR}"
+                echo "Password: ${nexuskey_PSW}"
                 echo "name is ${name}"
                 echo "$myName and ${myAge}"
             }
