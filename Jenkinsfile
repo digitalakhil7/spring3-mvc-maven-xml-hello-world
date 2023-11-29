@@ -1,12 +1,9 @@
 pipeline{
     agent any
-    environment{
-        course = "k9"
-    }
     stages{
         stage('Test'){
             when{
-                environment name: 'course', value: 'k8'
+                expression { BRANCH_NAME ==~ /(prod|test)/ }
             }
             steps{
                 echo "Hello Akhil"
