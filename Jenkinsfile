@@ -6,10 +6,7 @@ pipeline{
     stages{
         stage('Test'){
             when{
-                anyOf{
-                    branch 'master'
-                    environment name: 'approval', value: 'akhilvee'
-                }
+                equals expected: "nikhil", actual: "${approval}"
             }
             steps{
                 echo "Hello Master"
