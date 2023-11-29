@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Test'){
             when{
-                buildingTag()
+                tag "v1.3"
             }
             steps{
                 echo "Tag Present - from Master"
