@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        course = "K8S"
+        name = "Akhil"
     }
     stages{
         stage('Test'){
