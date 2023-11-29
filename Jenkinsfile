@@ -6,10 +6,10 @@ pipeline{
     stages{
         stage('Test'){
             when{
-                equals expected: "akhil", actual: "${approval}"
+                buildingTag()
             }
             steps{
-                echo "Hello Master"
+                echo "Tag Present - from Master"
             }
         }
     }
