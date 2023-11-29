@@ -8,7 +8,7 @@ pipeline{
             when{
                 allOf{
                     branch 'master'
-                    environment name: 'approval', value: 'akhil'
+                    environment name: 'approval', value: 'akhilvee'
                 }
             }
             steps{
