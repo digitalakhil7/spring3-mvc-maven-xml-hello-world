@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Test'){
             when{
-                allOf{
+                anyOf{
                     branch 'master'
                     environment name: 'approval', value: 'akhilvee'
                 }
