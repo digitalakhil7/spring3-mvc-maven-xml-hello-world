@@ -10,7 +10,7 @@ pipeline{
         }
             steps{
                 echo "Master Branch Updated"
-                echo "Course: ${course} and name is ${name}"
+                echo "name is ${name}"
             }
         }
     }
