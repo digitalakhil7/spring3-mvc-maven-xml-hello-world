@@ -2,8 +2,11 @@ pipeline{
     agent any
     stages{
         stage('Test'){
+            when{
+                expression { BRANCH_NAME ==~ /(prod|test)/ }
+            }
             steps{
-                echo "Release2 Branch"
+                echo "Hello Akhil"
             }
         }
     }
