@@ -9,7 +9,7 @@ pipeline{
         name = "AkhilJenkins"
         }
             steps{
-                echo "Master Branch"
+                echo "Master Branch Updated"
                 echo "Course: ${course} and name is ${name}"
             }
         }
