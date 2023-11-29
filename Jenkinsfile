@@ -3,10 +3,10 @@ pipeline{
     stages{
         stage('Test'){
             when{
-                expression { BRANCH_NAME ==~ /(prod|test)/ }
+                branch 'master'
             }
             steps{
-                echo "Hello Akhil"
+                echo "Hello Master"
             }
         }
     }
